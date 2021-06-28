@@ -1,0 +1,570 @@
+>> ids file: /home/hyun/ids-output/exp3/ids_lstm_baseline_r1_d22_1.csv <<
+>> ca file: /home/hyun/ids-output/exp3/ca_lstm_baseline_r1_d22_1.csv <<
+Baseline Precision: 0.15
+Baseline Recall: 0.97
+Baseline F1: 0.27
+Total Infections: 66
+Total Identified Infections: 141
+Correct Infections: 52
+Precision: 0.37
+Recall: 0.79
+F1: 0.5
+
+>> ids file: /home/hyun/ids-output/exp3/ids_lstm_baseline_r1_d22_2.csv <<
+>> ca file: /home/hyun/ids-output/exp3/ca_lstm_baseline_r1_d22_2.csv <<
+Baseline Precision: 0.26
+Baseline Recall: 1.0
+Baseline F1: 0.41
+Total Infections: 68
+Total Identified Infections: 85
+Correct Infections: 64
+Precision: 0.75
+Recall: 0.94
+F1: 0.83
+
+>> ids file: /home/hyun/ids-output/exp3/ids_lstm_baseline_r1_d22_3.csv <<
+>> ca file: /home/hyun/ids-output/exp3/ca_lstm_baseline_r1_d22_3.csv <<
+Baseline Precision: 0.35
+Baseline Recall: 0.96
+Baseline F1: 0.51
+Total Infections: 68
+Total Identified Infections: 105
+Correct Infections: 63
+Precision: 0.6
+Recall: 0.93
+F1: 0.73
+
+>> ids file: /home/hyun/ids-output/exp3/ids_lstm_baseline_r1_d22_4.csv <<
+>> ca file: /home/hyun/ids-output/exp3/ca_lstm_baseline_r1_d22_4.csv <<
+Baseline Precision: 0.26
+Baseline Recall: 0.97
+Baseline F1: 0.41
+Total Infections: 68
+Total Identified Infections: 145
+Correct Infections: 64
+Precision: 0.44
+Recall: 0.94
+F1: 0.6
+
+>> ids file: /home/hyun/ids-output/exp3/ids_lstm_baseline_r1_d22_5.csv <<
+>> ca file: /home/hyun/ids-output/exp3/ca_lstm_baseline_r1_d22_5.csv <<
+Baseline Precision: 0.19
+Baseline Recall: 0.98
+Baseline F1: 0.31
+Total Infections: 61
+Total Identified Infections: 56
+Correct Infections: 39
+Precision: 0.7
+Recall: 0.64
+F1: 0.67
+
+>> ids file: /home/hyun/ids-output/exp3/ids_lstm_baseline_r1_d22_6.csv <<
+>> ca file: /home/hyun/ids-output/exp3/ca_lstm_baseline_r1_d22_6.csv <<
+Baseline Precision: 0.15
+Baseline Recall: 1.0
+Baseline F1: 0.27
+Total Infections: 57
+Total Identified Infections: 149
+Correct Infections: 55
+Precision: 0.37
+Recall: 0.96
+F1: 0.53
+
+>> ids file: /home/hyun/ids-output/exp3/ids_lstm_baseline_r1_d22_7.csv <<
+>> ca file: /home/hyun/ids-output/exp3/ca_lstm_baseline_r1_d22_7.csv <<
+Baseline Precision: 0.19
+Baseline Recall: 0.95
+Baseline F1: 0.31
+Total Infections: 66
+Total Identified Infections: 135
+Correct Infections: 59
+Precision: 0.44
+Recall: 0.89
+F1: 0.59
+
+>> ids file: /home/hyun/ids-output/exp3/ids_lstm_baseline_r1_d22_8.csv <<
+>> ca file: /home/hyun/ids-output/exp3/ca_lstm_baseline_r1_d22_8.csv <<
+Baseline Precision: 0.27
+Baseline Recall: 1.0
+Baseline F1: 0.42
+Total Infections: 68
+Total Identified Infections: 146
+Correct Infections: 63
+Precision: 0.43
+Recall: 0.93
+F1: 0.59
+
+>> ids file: /home/hyun/ids-output/exp3/ids_lstm_baseline_r1_d22_9.csv <<
+>> ca file: /home/hyun/ids-output/exp3/ca_lstm_baseline_r1_d22_9.csv <<
+Baseline Precision: 0.31
+Baseline Recall: 0.97
+Baseline F1: 0.47
+Total Infections: 61
+Total Identified Infections: 133
+Correct Infections: 56
+Precision: 0.42
+Recall: 0.92
+F1: 0.58
+
+>> ids file: /home/hyun/ids-output/exp3/ids_lstm_baseline_r1_d22_10.csv <<
+>> ca file: /home/hyun/ids-output/exp3/ca_lstm_baseline_r1_d22_10.csv <<
+Baseline Precision: 0.23
+Baseline Recall: 1.0
+Baseline F1: 0.37
+Total Infections: 66
+Total Identified Infections: 78
+Correct Infections: 61
+Precision: 0.78
+Recall: 0.92
+F1: 0.84
+
+>> ids file: /home/hyun/ids-output/exp3/ids_lstm_attention_r1_d22_1.csv <<
+>> ca file: /home/hyun/ids-output/exp3/ca_lstm_attention_r1_d22_1.csv <<
+Baseline Precision: 0.13
+Baseline Recall: 1.0
+Baseline F1: 0.23
+Total Infections: 28
+Total Identified Infections: 29
+Correct Infections: 26
+Precision: 0.9
+Recall: 0.93
+F1: 0.91
+Updated Precision: 0.97
+Updated Recall: 0.92
+Updated F1: 0.94
+
+>> ids file: /home/hyun/ids-output/exp3/ids_lstm_attention_r1_d22_2.csv <<
+>> ca file: /home/hyun/ids-output/exp3/ca_lstm_attention_r1_d22_2.csv <<
+Baseline Precision: 0.19
+Baseline Recall: 1.0
+Baseline F1: 0.32
+Total Infections: 36
+Total Identified Infections: 39
+Correct Infections: 36
+Precision: 0.92
+Recall: 1.0
+F1: 0.96
+Updated Precision: 0.98
+Updated Recall: 0.94
+Updated F1: 0.96
+
+>> ids file: /home/hyun/ids-output/exp3/ids_lstm_attention_r1_d22_3.csv <<
+>> ca file: /home/hyun/ids-output/exp3/ca_lstm_attention_r1_d22_3.csv <<
+Baseline Precision: 0.5
+Baseline Recall: 1.0
+Baseline F1: 0.67
+Total Infections: 63
+Total Identified Infections: 63
+Correct Infections: 62
+Precision: 0.98
+Recall: 0.98
+F1: 0.98
+Updated Precision: 0.97
+Updated Recall: 0.91
+Updated F1: 0.94
+
+>> ids file: /home/hyun/ids-output/exp3/ids_lstm_attention_r1_d22_4.csv <<
+>> ca file: /home/hyun/ids-output/exp3/ca_lstm_attention_r1_d22_4.csv <<
+Baseline Precision: 0.2
+Baseline Recall: 1.0
+Baseline F1: 0.34
+Total Infections: 62
+Total Identified Infections: 75
+Correct Infections: 61
+Precision: 0.81
+Recall: 0.98
+F1: 0.89
+Updated Precision: 0.44
+Updated Recall: 0.98
+Updated F1: 0.6
+
+>> ids file: /home/hyun/ids-output/exp3/ids_lstm_attention_r1_d22_5.csv <<
+>> ca file: /home/hyun/ids-output/exp3/ca_lstm_attention_r1_d22_5.csv <<
+Baseline Precision: 0.25
+Baseline Recall: 1.0
+Baseline F1: 0.4
+Total Infections: 59
+Total Identified Infections: 125
+Correct Infections: 54
+Precision: 0.43
+Recall: 0.92
+F1: 0.59
+Updated Precision: 0.37
+Updated Recall: 1.0
+Updated F1: 0.54
+
+>> ids file: /home/hyun/ids-output/exp3/ids_lstm_attention_r1_d22_6.csv <<
+>> ca file: /home/hyun/ids-output/exp3/ca_lstm_attention_r1_d22_6.csv <<
+Baseline Precision: 0.23
+Baseline Recall: 0.98
+Baseline F1: 0.38
+Total Infections: 63
+Total Identified Infections: 62
+Correct Infections: 61
+Precision: 0.98
+Recall: 0.97
+F1: 0.97
+Updated Precision: 0.97
+Updated Recall: 0.94
+Updated F1: 0.95
+
+>> ids file: /home/hyun/ids-output/exp3/ids_lstm_attention_r1_d22_7.csv <<
+>> ca file: /home/hyun/ids-output/exp3/ca_lstm_attention_r1_d22_7.csv <<
+Baseline Precision: 0.36
+Baseline Recall: 0.98
+Baseline F1: 0.53
+Total Infections: 58
+Total Identified Infections: 59
+Correct Infections: 57
+Precision: 0.97
+Recall: 0.98
+F1: 0.97
+Updated Precision: 0.96
+Updated Recall: 0.92
+Updated F1: 0.94
+
+>> ids file: /home/hyun/ids-output/exp3/ids_lstm_attention_r1_d22_8.csv <<
+>> ca file: /home/hyun/ids-output/exp3/ca_lstm_attention_r1_d22_8.csv <<
+Baseline Precision: 0.1
+Baseline Recall: 1.0
+Baseline F1: 0.18
+Total Infections: 28
+Total Identified Infections: 64
+Correct Infections: 25
+Precision: 0.39
+Recall: 0.89
+F1: 0.54
+Updated Precision: 0.84
+Updated Recall: 0.89
+Updated F1: 0.86
+
+>> ids file: /home/hyun/ids-output/exp3/ids_lstm_attention_r1_d22_9.csv <<
+>> ca file: /home/hyun/ids-output/exp3/ca_lstm_attention_r1_d22_9.csv <<
+Baseline Precision: 0.18
+Baseline Recall: 0.97
+Baseline F1: 0.3
+Total Infections: 62
+Total Identified Infections: 76
+Correct Infections: 57
+Precision: 0.75
+Recall: 0.92
+F1: 0.83
+Updated Precision: 0.57
+Updated Recall: 0.92
+Updated F1: 0.71
+
+>> ids file: /home/hyun/ids-output/exp3/ids_lstm_attention_r1_d22_10.csv <<
+>> ca file: /home/hyun/ids-output/exp3/ca_lstm_attention_r1_d22_10.csv <<
+Baseline Precision: 0.29
+Baseline Recall: 1.0
+Baseline F1: 0.45
+Total Infections: 69
+Total Identified Infections: 88
+Correct Infections: 69
+Precision: 0.78
+Recall: 1.0
+F1: 0.88
+Updated Precision: 0.75
+Updated Recall: 0.95
+Updated F1: 0.84
+
+>> ids file: /home/hyun/ids-output/exp3/ids_lstm_episode_tree_r1_d22_1.csv <<
+>> ca file: /home/hyun/ids-output/exp3/ca_lstm_episode_tree_r1_d22_1.csv <<
+Baseline Precision: 0.15
+Baseline Recall: 0.97
+Baseline F1: 0.26
+Total Infections: 68
+Total Identified Infections: 45
+Correct Infections: 20
+Precision: 0.44
+Recall: 0.29
+F1: 0.35
+Updated Precision: 0.75
+Updated Recall: 0.95
+Updated F1: 0.84
+
+>> ids file: /home/hyun/ids-output/exp3/ids_lstm_episode_tree_r1_d22_2.csv <<
+>> ca file: /home/hyun/ids-output/exp3/ca_lstm_episode_tree_r1_d22_2.csv <<
+Baseline Precision: 0.1
+Baseline Recall: 0.97
+Baseline F1: 0.18
+Total Infections: 29
+Total Identified Infections: 34
+Correct Infections: 17
+Precision: 0.5
+Recall: 0.59
+F1: 0.54
+Updated Precision: 0.75
+Updated Recall: 0.95
+Updated F1: 0.84
+
+>> ids file: /home/hyun/ids-output/exp3/ids_lstm_episode_tree_r1_d22_3.csv <<
+>> ca file: /home/hyun/ids-output/exp3/ca_lstm_episode_tree_r1_d22_3.csv <<
+Baseline Precision: 0.19
+Baseline Recall: 0.99
+Baseline F1: 0.32
+Total Infections: 70
+Total Identified Infections: 45
+Correct Infections: 14
+Precision: 0.31
+Recall: 0.2
+F1: 0.24
+Updated Precision: 0.75
+Updated Recall: 0.95
+Updated F1: 0.84
+
+>> ids file: /home/hyun/ids-output/exp3/ids_lstm_episode_tree_r1_d22_4.csv <<
+>> ca file: /home/hyun/ids-output/exp3/ca_lstm_episode_tree_r1_d22_4.csv <<
+Baseline Precision: 0.34
+Baseline Recall: 1.0
+Baseline F1: 0.51
+Total Infections: 65
+Total Identified Infections: 35
+Correct Infections: 23
+Precision: 0.66
+Recall: 0.35
+F1: 0.46
+Updated Precision: 0.75
+Updated Recall: 0.95
+Updated F1: 0.84
+
+>> ids file: /home/hyun/ids-output/exp3/ids_lstm_episode_tree_r1_d22_5.csv <<
+>> ca file: /home/hyun/ids-output/exp3/ca_lstm_episode_tree_r1_d22_5.csv <<
+Baseline Precision: 0.3
+Baseline Recall: 0.97
+Baseline F1: 0.45
+Total Infections: 62
+Total Identified Infections: 39
+Correct Infections: 32
+Precision: 0.82
+Recall: 0.52
+F1: 0.64
+Updated Precision: 0.75
+Updated Recall: 0.95
+Updated F1: 0.84
+
+>> ids file: /home/hyun/ids-output/exp3/ids_lstm_episode_tree_r1_d22_6.csv <<
+>> ca file: /home/hyun/ids-output/exp3/ca_lstm_episode_tree_r1_d22_6.csv <<
+Baseline Precision: 0.21
+Baseline Recall: 0.98
+Baseline F1: 0.35
+Total Infections: 66
+Total Identified Infections: 38
+Correct Infections: 33
+Precision: 0.87
+Recall: 0.5
+F1: 0.64
+Updated Precision: 0.75
+Updated Recall: 0.95
+Updated F1: 0.84
+
+>> ids file: /home/hyun/ids-output/exp3/ids_lstm_episode_tree_r1_d22_7.csv <<
+>> ca file: /home/hyun/ids-output/exp3/ca_lstm_episode_tree_r1_d22_7.csv <<
+Baseline Precision: 0.26
+Baseline Recall: 1.0
+Baseline F1: 0.41
+Total Infections: 69
+Total Identified Infections: 38
+Correct Infections: 28
+Precision: 0.74
+Recall: 0.41
+F1: 0.53
+Updated Precision: 0.75
+Updated Recall: 0.95
+Updated F1: 0.84
+
+>> ids file: /home/hyun/ids-output/exp3/ids_lstm_episode_tree_r1_d22_8.csv <<
+>> ca file: /home/hyun/ids-output/exp3/ca_lstm_episode_tree_r1_d22_8.csv <<
+Baseline Precision: 0.17
+Baseline Recall: 0.98
+Baseline F1: 0.29
+Total Infections: 43
+Total Identified Infections: 39
+Correct Infections: 18
+Precision: 0.46
+Recall: 0.42
+F1: 0.44
+Updated Precision: 0.75
+Updated Recall: 0.95
+Updated F1: 0.84
+
+>> ids file: /home/hyun/ids-output/exp3/ids_lstm_episode_tree_r1_d22_9.csv <<
+>> ca file: /home/hyun/ids-output/exp3/ca_lstm_episode_tree_r1_d22_9.csv <<
+Baseline Precision: 0.12
+Baseline Recall: 1.0
+Baseline F1: 0.22
+Total Infections: 31
+Total Identified Infections: 35
+Correct Infections: 12
+Precision: 0.34
+Recall: 0.39
+F1: 0.36
+Updated Precision: 0.75
+Updated Recall: 0.95
+Updated F1: 0.84
+
+>> ids file: /home/hyun/ids-output/exp3/ids_lstm_episode_tree_r1_d22_10.csv <<
+>> ca file: /home/hyun/ids-output/exp3/ca_lstm_episode_tree_r1_d22_10.csv <<
+Baseline Precision: 0.12
+Baseline Recall: 1.0
+Baseline F1: 0.22
+Total Infections: 32
+Total Identified Infections: 42
+Correct Infections: 16
+Precision: 0.38
+Recall: 0.5
+F1: 0.43
+Updated Precision: 0.75
+Updated Recall: 0.95
+Updated F1: 0.84
+
+>> ids file: /home/hyun/ids-output/exp3/ids_lstm_viterbi_r1_d22_1.csv <<
+>> ca file: /home/hyun/ids-output/exp3/ca_lstm_viterbi_r1_d22_1.csv <<
+Baseline Precision: 0.16
+Baseline Recall: 0.91
+Baseline F1: 0.28
+Total Infections: 32
+Total Identified Infections: 21
+Correct Infections: 1
+Precision: 0.05
+Recall: 0.03
+F1: 0.04
+Updated Precision: 0.75
+Updated Recall: 0.95
+Updated F1: 0.84
+
+>> ids file: /home/hyun/ids-output/exp3/ids_lstm_viterbi_r1_d22_2.csv <<
+>> ca file: /home/hyun/ids-output/exp3/ca_lstm_viterbi_r1_d22_2.csv <<
+Baseline Precision: 0.3
+Baseline Recall: 0.98
+Baseline F1: 0.46
+Total Infections: 66
+Total Identified Infections: 136
+Correct Infections: 0
+Precision: 0.0
+Recall: 0.0
+F1: 0
+Updated Precision: 0.75
+Updated Recall: 0.95
+Updated F1: 0.84
+
+>> ids file: /home/hyun/ids-output/exp3/ids_lstm_viterbi_r1_d22_3.csv <<
+>> ca file: /home/hyun/ids-output/exp3/ca_lstm_viterbi_r1_d22_3.csv <<
+Baseline Precision: 0.16
+Baseline Recall: 0.97
+Baseline F1: 0.28
+Total Infections: 68
+Total Identified Infections: 101
+Correct Infections: 65
+Precision: 0.64
+Recall: 0.96
+F1: 0.77
+Updated Precision: 0.75
+Updated Recall: 0.95
+Updated F1: 0.84
+
+>> ids file: /home/hyun/ids-output/exp3/ids_lstm_viterbi_r1_d22_4.csv <<
+>> ca file: /home/hyun/ids-output/exp3/ca_lstm_viterbi_r1_d22_4.csv <<
+Baseline Precision: 0.17
+Baseline Recall: 1.0
+Baseline F1: 0.3
+Total Infections: 51
+Total Identified Infections: 133
+Correct Infections: 5
+Precision: 0.04
+Recall: 0.1
+F1: 0.06
+Updated Precision: 0.75
+Updated Recall: 0.95
+Updated F1: 0.84
+
+>> ids file: /home/hyun/ids-output/exp3/ids_lstm_viterbi_r1_d22_5.csv <<
+>> ca file: /home/hyun/ids-output/exp3/ca_lstm_viterbi_r1_d22_5.csv <<
+Baseline Precision: 0.25
+Baseline Recall: 0.95
+Baseline F1: 0.39
+Total Infections: 64
+Total Identified Infections: 138
+Correct Infections: 9
+Precision: 0.07
+Recall: 0.14
+F1: 0.09
+Updated Precision: 0.75
+Updated Recall: 0.95
+Updated F1: 0.84
+
+>> ids file: /home/hyun/ids-output/exp3/ids_lstm_viterbi_r1_d22_6.csv <<
+>> ca file: /home/hyun/ids-output/exp3/ca_lstm_viterbi_r1_d22_6.csv <<
+Baseline Precision: 0.24
+Baseline Recall: 0.77
+Baseline F1: 0.37
+Total Infections: 64
+Total Identified Infections: 149
+Correct Infections: 19
+Precision: 0.13
+Recall: 0.3
+F1: 0.18
+Updated Precision: 0.75
+Updated Recall: 0.95
+Updated F1: 0.84
+
+>> ids file: /home/hyun/ids-output/exp3/ids_lstm_viterbi_r1_d22_7.csv <<
+>> ca file: /home/hyun/ids-output/exp3/ca_lstm_viterbi_r1_d22_7.csv <<
+Baseline Precision: 0.27
+Baseline Recall: 1.0
+Baseline F1: 0.42
+Total Infections: 61
+Total Identified Infections: 130
+Correct Infections: 54
+Precision: 0.42
+Recall: 0.89
+F1: 0.57
+Updated Precision: 0.75
+Updated Recall: 0.95
+Updated F1: 0.84
+
+>> ids file: /home/hyun/ids-output/exp3/ids_lstm_viterbi_r1_d22_8.csv <<
+>> ca file: /home/hyun/ids-output/exp3/ca_lstm_viterbi_r1_d22_8.csv <<
+Baseline Precision: 0.08
+Baseline Recall: 0.97
+Baseline F1: 0.14
+Total Infections: 31
+Total Identified Infections: 22
+Correct Infections: 4
+Precision: 0.18
+Recall: 0.13
+F1: 0.15
+Updated Precision: 0.75
+Updated Recall: 0.95
+Updated F1: 0.84
+
+>> ids file: /home/hyun/ids-output/exp3/ids_lstm_viterbi_r1_d22_9.csv <<
+>> ca file: /home/hyun/ids-output/exp3/ca_lstm_viterbi_r1_d22_9.csv <<
+Baseline Precision: 0.26
+Baseline Recall: 1.0
+Baseline F1: 0.41
+Total Infections: 57
+Total Identified Infections: 652
+Correct Infections: 28
+Precision: 0.04
+Recall: 0.49
+F1: 0.07
+Updated Precision: 0.75
+Updated Recall: 0.95
+Updated F1: 0.84
+
+>> ids file: /home/hyun/ids-output/exp3/ids_lstm_viterbi_r1_d22_10.csv <<
+>> ca file: /home/hyun/ids-output/exp3/ca_lstm_viterbi_r1_d22_10.csv <<
+Baseline Precision: 0.17
+Baseline Recall: 1.0
+Baseline F1: 0.29
+Total Infections: 61
+Total Identified Infections: 540
+Correct Infections: 7
+Precision: 0.01
+Recall: 0.11
+F1: 0.02
+Updated Precision: 0.75
+Updated Recall: 0.95
+Updated F1: 0.84
+

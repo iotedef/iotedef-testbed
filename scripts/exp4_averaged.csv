@@ -1,0 +1,33 @@
+>> Averaged Result (st: 1) <<
+Baseline Precision: 0.35 (0.15)
+Baseline Recall: 0.98 (0.04)
+Baseline F1: 0.49 (0.14)
+Precision: 0.82 (0.21)
+Recall: 0.81 (0.25)
+F1: 0.76 (0.18)
+Updated Precision: 0.77 (0.2)
+Updated Recall: 0.92 (0.05)
+Updated F1: 0.82 (0.15)
+
+>> Averaged Result (st: 2) <<
+Baseline Precision: 0.19 (0.08)
+Baseline Recall: 1.0 (0.0)
+Baseline F1: 0.31 (0.1)
+Precision: 0.59 (0.29)
+Recall: 0.94 (0.08)
+F1: 0.68 (0.24)
+Updated Precision: 0.82 (0.15)
+Updated Recall: 0.94 (0.02)
+Updated F1: 0.87 (0.11)
+
+>> Averaged Result (st: 3) <<
+Baseline Precision: 0.34 (0.17)
+Baseline Recall: 0.96 (0.04)
+Baseline F1: 0.48 (0.16)
+Precision: 0.74 (0.38)
+Recall: 0.71 (0.37)
+F1: 0.71 (0.36)
+Updated Precision: 0.64 (0.24)
+Updated Recall: 0.88 (0.12)
+Updated F1: 0.72 (0.2)
+

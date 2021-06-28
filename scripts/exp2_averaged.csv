@@ -1,0 +1,55 @@
+>> Averaged Result (c: logistic_regression) <<
+Baseline Precision: 0.33 (0.25)
+Baseline Recall: 1.0 (0.0)
+Baseline F1: 0.45 (0.24)
+Precision: 0.54 (0.3)
+Recall: 0.88 (0.27)
+F1: 0.63 (0.28)
+Updated Precision: 0 (0.0)
+Updated Recall: 0 (0.0)
+Updated F1: 0 (0.0)
+
+>> Averaged Result (c: decision_tree) <<
+Baseline Precision: 0.86 (0.2)
+Baseline Recall: 0.83 (0.27)
+Baseline F1: 0.78 (0.27)
+Precision: 0.93 (0.17)
+Recall: 0.83 (0.27)
+F1: 0.82 (0.26)
+Updated Precision: 0 (0.0)
+Updated Recall: 0 (0.0)
+Updated F1: 0 (0.0)
+
+>> Averaged Result (c: random_forest) <<
+Baseline Precision: 0.79 (0.27)
+Baseline Recall: 0.88 (0.11)
+Baseline F1: 0.79 (0.22)
+Precision: 0.7 (0.31)
+Recall: 0.8 (0.24)
+F1: 0.65 (0.21)
+Updated Precision: 0 (0.0)
+Updated Recall: 0 (0.0)
+Updated F1: 0 (0.0)
+
+>> Averaged Result (c: feedforward) <<
+Baseline Precision: 0.26 (0.14)
+Baseline Recall: 1.0 (0.0)
+Baseline F1: 0.39 (0.15)
+Precision: 0.64 (0.23)
+Recall: 0.94 (0.16)
+F1: 0.73 (0.2)
+Updated Precision: 0 (0.0)
+Updated Recall: 0 (0.0)
+Updated F1: 0 (0.0)
+
+>> Averaged Result (c: lstm) <<
+Baseline Precision: 0.36 (0.15)
+Baseline Recall: 0.99 (0.03)
+Baseline F1: 0.51 (0.16)
+Precision: 0.78 (0.21)
+Recall: 0.9 (0.18)
+F1: 0.8 (0.16)
+Updated Precision: 0.69 (0.29)
+Updated Recall: 0.96 (0.03)
+Updated F1: 0.76 (0.19)
+

@@ -1,0 +1,82 @@
+# Parameters
+Window Size: 1
+Sliding Window: True
+Episode Maximum Length: 100
+Episode Minimum Frequency: 0.01
+Episode Minimum Confidence: 0
+Fixed Length Episode: False
+Batch Granularity: 0.1
+Batch Width: 30
+Classes: B, A, I, R
+Home Directory: /home/hyun/ids-output
+Round Value: 1
+IP Address: 127.0.0.1
+Port: 20000
+Output Prefix: sequence
+Analysis Result Prefix: result
+Number Of Candidates: 10
+Number Of Results: 10
+Number Of Final Results: 3
+Local: True
+IP Address 0: 10.0.0.69
+Port 0: 20001
+IP Address 1: 10.0.60.196
+Port 1: 20001
+Self Evolving: True
+Update Strategy: 1
+
+# Encoders (identity)
+Encoder: identity
+
+# Algorithms (naive_bayes/svm/feedforward/logistic_regression/random_forest/decision_tree/lstm)
+Attack Detection: random_forest
+Infection Detection: random_forest
+Reconnaissance Detection: random_forest
+
+# Causal Analyzer (attention/identity/baseline/viterbi/simple_attention/episode_tree/bilstm_attention)
+Analyzer: attention
+
+# Packet Feature Extractors (True/False)
+
+# Flow Feature Extractors (True/False)
+forward_iat_std: True
+flow_iat_total: True
+flow_rst: True
+forward_iat_max: True
+flow_packets_per_second: True
+forward_packet_length_mean: True
+backward_packet_length_std: True
+flow_ece: True
+flow_iat_mean: True
+backward_packet_length_mean: True
+forward_packet_length_min: True
+forward_iat_total: True
+backward_packet_length_min: True
+backward_iat_mean: True
+flow_cwr: True
+flow_iat_min: True
+flow_iat_max: True
+total_length_of_backward_packets: True
+forward_packet_length_std: True
+total_backward_packets: True
+backward_iat_total: True
+total_length_of_forward_packets: True
+bpkts_per_second: True
+backward_iat_std: True
+forward_packet_length_max: True
+fpkts_per_second: True
+total_fhlen: True
+forward_iat_mean: True
+flow_urg: True
+flow_ack: True
+forward_iat_min: True
+flow_iat_std: True
+total_forward_packets: True
+flow_syn: True
+flow_psh: False
+total_bhlen: True
+flow_fin: True
+backward_packet_length_max: True
+backward_iat_max: True
+backward_iat_min: True
+flow_protocol: True

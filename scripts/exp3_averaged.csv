@@ -1,0 +1,44 @@
+>> Averaged Result (a: baseline) <<
+Baseline Precision: 0.24 (0.06)
+Baseline Recall: 0.98 (0.02)
+Baseline F1: 0.38 (0.08)
+Precision: 0.53 (0.15)
+Recall: 0.89 (0.09)
+F1: 0.65 (0.11)
+Updated Precision: 0 (0.0)
+Updated Recall: 0 (0.0)
+Updated F1: 0 (0.0)
+
+>> Averaged Result (a: attention) <<
+Baseline Precision: 0.24 (0.11)
+Baseline Recall: 0.99 (0.01)
+Baseline F1: 0.38 (0.14)
+Precision: 0.79 (0.21)
+Recall: 0.96 (0.04)
+F1: 0.85 (0.15)
+Updated Precision: 0.78 (0.23)
+Updated Recall: 0.94 (0.03)
+Updated F1: 0.83 (0.15)
+
+>> Averaged Result (a: episode_tree) <<
+Baseline Precision: 0.2 (0.08)
+Baseline Recall: 0.99 (0.01)
+Baseline F1: 0.32 (0.1)
+Precision: 0.55 (0.19)
+Recall: 0.42 (0.11)
+F1: 0.46 (0.12)
+Updated Precision: 0 (0.0)
+Updated Recall: 0 (0.0)
+Updated F1: 0 (0.0)
+
+>> Averaged Result (a: viterbi) <<
+Baseline Precision: 0.21 (0.06)
+Baseline Recall: 0.96 (0.07)
+Baseline F1: 0.33 (0.09)
+Precision: 0.16 (0.2)
+Recall: 0.32 (0.33)
+F1: 0.2 (0.25)
+Updated Precision: 0 (0.0)
+Updated Recall: 0 (0.0)
+Updated F1: 0 (0.0)
+
