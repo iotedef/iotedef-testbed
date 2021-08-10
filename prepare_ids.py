@@ -172,8 +172,8 @@ def make_initializer(anames, cnames, enames, pnames, fnames):
 
 def command_line_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument("-a", "--algorithms", help="Algorithm directory", type=str, default="algorithms")
-    parser.add_argument("-c", "--causal", help="Causal analyzer directory", type=str, default="analyzers")
+    parser.add_argument("-a", "--algorithms", help="Detection algorithm directory", type=str, default="algorithms")
+    parser.add_argument("-c", "--causal", help="Infection identification analyzer directory", type=str, default="analyzers")
     parser.add_argument("-e", "--encoders", help="Encoder directory", type=str, default="encoders")
     parser.add_argument("-f", "--features", help="Feature directory", type=str, default="features")
     parser.add_argument("-o", "--output", help="Output filename", type=str, default="ids_config")
@@ -189,7 +189,7 @@ def main():
         sys.exit(1)
 
     if not os.path.exists(args.causal):
-        print ("Invalid causal analyzer directory. Please insert the correct causal analyzer directory")
+        print ("Invalid infection identification analyzer directory. Please insert the correct infection identification analyzer directory")
         sys.exit(1)
 
     if not os.path.exists(args.encoders):

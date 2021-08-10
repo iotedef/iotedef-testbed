@@ -34,6 +34,13 @@ This repository includes the source code of the IoTEDef system.
  * Generate a test dataset
  * e.g., python3 ../scripts/generate_dataset.py --benign ../specified/benign-large-2.pcap 0 90 --reconnaissance ../specified/portscanning-3-pkts.pcap 0.5 1 --infection ../specified/infection-small-1.pcap 0.2 1 --benign ../specified/benign-telnet-test-2-pkts.pcap 0.7 1 --infection ../specified/infection-small-3.pcap 10 3 --benign ../specified/benign-telnet-test-4-pkts.pcap 15 3 --attack ../specified/mirai-udpflooding-2-pkts.pcap 78 2 -p test --local
 
+## How to Add Algorithms
+ * Add a new detector algorithm to the algorithms directory by python3 add_algorithm.py --name \<name of a new algorithm\> (e.g., python3 add_algorithm.py --name decision_tree)
+ * Add a new infection identifier algorithm to the analyzers directory by python3 add_analyzer.py --name \<name of a new algorithm\> (e.g., python3 add_analyzer.py --name attention)
+ * Add a new encoding algorithm to the encoders directory by python3 add_encoder.py --name \<name of a new encoder\> (e.g., python3 add_encoder.py --name identity)
+ * Add a new feature to the features directory by python3 add_feature.py --type \<flow/packet\> --name \<name of a new feature\> (e.g., python3 add_feature.py --type flow --name iat)
+ * Update a new setting by python3 prepare_ids.py 
+
 ## How to Run the IDS testbed
  * Run the infection identifier: python3 infection_identifier.py -c \<configuration file\> -o \<output file prefix\> -s \<serial number\> 
  * e.g., python3 infection_identifier.py -c ids.conf -o infection_identifier -s 1
