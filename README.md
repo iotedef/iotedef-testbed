@@ -12,9 +12,13 @@ This repository includes the source code of the IoTEDef system.
 * scripts: the scripts for the experiments and the graphs
 * utils: other functions defined
 
+## Tested environment
+* Ubuntu 20.04
+* Python 3.8.10
+
 ## Prerequisites
- * python3
- * pip3 install sklearn keras tensorflow
+ * `sudo apt-get update && sudo apt-get install git python3-pip libpcap-dev
+ * `sudo pip3 install -r requirements.txt`
 
 ## How to Install
  * Make your root directory (e.g., mkdir ids-root)

@@ -1,0 +1,13 @@
+dpkt==1.9.4
+Keras==2.4.3
+numpy==1.19.5
+pcapy==0.11.4
+pexpect==4.8.0
+scapy==2.4.4
+scipy==1.5.4
+sklearn==0.0
+tensorflow==2.4.1
+protobuf==3.9.2
+h5py==2.10.0
+ipython==7.16.1
+testresources==2.0.1
