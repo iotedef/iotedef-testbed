@@ -17,7 +17,7 @@ This repository includes the source code of the IoTEDef system.
 * Python 3.8.10
 
 ## Prerequisites
- * `sudo apt-get update && sudo apt-get install git python3-pip libpcap-dev
+ * `sudo apt-get update && sudo apt-get install git python3-pip libpcap-dev tcpreplay`
  * `sudo pip3 install -r requirements.txt`
 
 ## How to Install
