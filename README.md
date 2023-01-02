@@ -27,29 +27,30 @@ This repository includes the source code of the IoTEDef system.
  * git clone https://github.com/iotedef/iotedef-dataset.git
  * Change the name of the dataset directory from iotedef-dataset to dataset (mv iotedef-dataset dataset)
 
-## How to Generate Dataset
- * Generate the dataset by using `dataset/scripts/generate_dataset.py'
- * Should generate a training set and a test set separately
- * Generate the subdirectories under the dataset directory in the form of set_\<dataset number\> (the dataset number should be the positive number)
- * e.g., mkdir set_1
- * Change the directory to the generated subdirectory (e.g., cd set_1)
- * Generate a training dataset
- * e.g., python3 ../scripts/generate_dataset.py --benign ../specified/benign-large-1.pcap 0 10 --reconnaissance ../specified/portscanning-1-pkts.pcap 0 3 --benign ../specified/benign-telnet-1-pkts.pcap 2 1 --infection ../specified/bruteforce-small-1.pcap 4 2 --infection ../specified/bruteforce-small-2.pcap 5 2 --infection ../specified/bruteforce-small-3.pcap 6 2 --attack ../specified/mirai-udpflooding-1-pkts.pcap 9 1 -p training --local
- * Generate a test dataset
- * e.g., python3 ../scripts/generate_dataset.py --benign ../specified/benign-large-2.pcap 0 90 --reconnaissance ../specified/portscanning-3-pkts.pcap 0.5 1 --infection ../specified/infection-small-1.pcap 0.2 1 --benign ../specified/benign-telnet-test-2-pkts.pcap 0.7 1 --infection ../specified/infection-small-3.pcap 10 3 --benign ../specified/benign-telnet-test-4-pkts.pcap 15 3 --attack ../specified/mirai-udpflooding-2-pkts.pcap 78 2 -p test --local
-
-## How to Add Algorithms
- * Add a new detector algorithm to the algorithms directory by python3 add_algorithm.py --name \<name of a new algorithm\> (e.g., python3 add_algorithm.py --name decision_tree)
- * Add a new infection identifier algorithm to the analyzers directory by python3 add_analyzer.py --name \<name of a new algorithm\> (e.g., python3 add_analyzer.py --name attention)
- * Add a new encoding algorithm to the encoders directory by python3 add_encoder.py --name \<name of a new encoder\> (e.g., python3 add_encoder.py --name identity)
- * Add a new feature to the features directory by python3 add_feature.py --type \<flow/packet\> --name \<name of a new feature\> (e.g., python3 add_feature.py --type flow --name iat)
- * Update a new setting by python3 prepare_ids.py 
-
 ## How to Run the IDS testbed
  * Run the infection identifier: python3 infection_identifier.py -c \<configuration file\> -o \<output file prefix\> -s \<serial number\> 
- * e.g., python3 infection_identifier.py -c ids.conf -o infection_identifier -s 1
+ * e.g., sudo python3 infection_identifier.py -c ids.conf -o infection_identifier -s 1
  * Run the IDS system (requires sudo privilege): sudo python3 ids.py -c \<configuration file\> -o \<output file prefix\> -s \<serial number\> -d \<dataset number\> -e \<dataset number\>
- * e.g., python3 ids.py -c ids.conf -o ids -s 1 -d 1 -e 2
+ * e.g., sudo python3 ids.py -c ids.conf -o ids -s 1 -d 1 -e 1
+
+## How to Generate Dataset
+ * The script `dataset/scripts/generate_dataset.py' is used to generate the datasets
+ * You should generate a training set and a test set separately
+ * You should generate the subdirectories under the dataset directory in the form of set_\<dataset number\> (the dataset number should be the positive number)
+ * e.g., `mkdir set_2`
+ * Please change the directory to the generated subdirectory (e.g., cd set_2)
+ * Let's generate a training dataset
+ * e.g., `python3 ../scripts/generate_dataset.py --benign ../specified/benign-large-1.pcap 0 10 --reconnaissance ../specified/portscanning-1-pkts.pcap 0 3 --benign ../specified/benign-telnet-1-pkts.pcap 2 1 --infection ../specified/bruteforce-small-1.pcap 4 2 --infection ../specified/bruteforce-small-2.pcap 5 2 --infection ../specified/bruteforce-small-3.pcap 6 2 --attack ../specified/mirai-udpflooding-1-pkts.pcap 9 1 -p training --local`
+ * Let's generate a test dataset
+ * e.g., `python3 ../scripts/generate_dataset.py --benign ../specified/benign-large-2.pcap 0 90 --reconnaissance ../specified/portscanning-3-pkts.pcap 0.5 1 --infection ../specified/infection-small-1.pcap 0.2 1 --benign ../specified/benign-telnet-test-2-pkts.pcap 0.7 1 --infection ../specified/infection-small-3.pcap 10 3 --benign ../specified/benign-telnet-test-4-pkts.pcap 15 3 --attack ../specified/mirai-udpflooding-2-pkts.pcap 78 2 -p test --local`
+ * You can use the generated datasets by running the ids with the dataset number (e.g., `-d 2`)
+
+## How to Add Algorithms
+ * You can add a new detector algorithm to the algorithms directory by python3 add_algorithm.py --name \<name of a new algorithm\> (e.g., `python3 add_algorithm.py --name decision_tree`)
+ * You can add a new infection identifier algorithm to the analyzers directory by python3 add_analyzer.py --name \<name of a new algorithm\> (e.g., `python3 add_analyzer.py --name attention`)
+ * You can add a new encoding algorithm to the encoders directory by python3 add_encoder.py --name \<name of a new encoder\> (e.g., `python3 add_encoder.py --name identity`)
+ * You can add a new feature to the features directory by python3 add_feature.py --type \<flow/packet\> --name \<name of a new feature\> (e.g., `python3 add_feature.py --type flow --name iat`)
+ * Please update a new setting by `python3 prepare_ids.py` when you add something
 
 ## Configurations
 
