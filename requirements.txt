@@ -11,3 +11,4 @@ protobuf==3.9.2
 h5py==2.10.0
 ipython==7.16.1
 testresources==2.0.1
+pyshark==0.4.2.11
