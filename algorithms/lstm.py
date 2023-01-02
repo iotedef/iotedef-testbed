@@ -49,7 +49,7 @@ class Lstm(Algorithm):
         self.classifier[kind].compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
 
         try:
-            self.classifier[kind].fit(dataset, labels, epochs=10, validation_split=0.2, verbose=2)
+            self.classifier[kind].fit(dataset, labels, epochs=50, validation_split=0.2, verbose=2)
             if fallback:
                 logging.info("{} {} classifier is generated with the time step 1".format(self.get_name(), kind))
             else:

@@ -31,15 +31,15 @@ class Attention(Analyzer):
         labels = np.array(labels)
 
         inputs = Input((1, features))
-        att_in = LSTM(100, return_sequences=True, dropout=0.5, recurrent_dropout=0.2)(inputs)
+        att_in = LSTM(128, return_sequences=True, dropout=0.5, recurrent_dropout=0.2)(inputs)
         att_out = AttentionLayer()(att_in)
-        op = Dense(64, activation='relu', trainable=True)(att_out)
+        op = Dense(128, activation='relu', trainable=True)(att_out)
         outputs = Dense(4, activation='softmax', trainable=True)(op)
         self.model = Model(inputs, outputs)
         self.model.compile(loss='sparse_categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
 
         try:
-            self.model.fit(x=dataset, y=labels, batch_size=64, epochs=50, verbose=0, shuffle=True, validation_split=0.2)
+            self.model.fit(x=dataset, y=labels, batch_size=64, epochs=100, verbose=2, shuffle=True, validation_split=0.2)
             logging.info("Attention Analyzer is generated")
 
             for layer in self.model.layers:
