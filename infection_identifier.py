@@ -331,6 +331,8 @@ def parse_config(conf, serial):
                     info["efname"] = efname
                 elif key == "Update Strategy":
                     info["strategy"] = val
+                elif key == "Sequence Length":
+                    info["sequence_length"] = int(val)
                 elif key == "Encoder":
                     ename = val
                     info["encoder"] = ename

@@ -309,10 +309,31 @@ class ModelManager:
                     after = time.time()
                     self.learning_time["reconnaissance"][rname] = after - before
 
+            windows = self.training_set.get_windows()
+            logging.info("Setting the probabilities on windows: {}".format(len(windows)))
+            wnum = 0
+            for window in windows:
+                for aname in self.anames:
+                    aresult, aprob = self.algorithms[aname].detection(window, "attack")
+                for iname in self.inames:
+                    iresult, iprob = self.algorithms[iname].detection(window, "infection")
+                for rname in self.rnames:
+                    rresult, rprob = self.algorithms[rname].detection(window, "reconnaissance")
+                window.set_labeled("attack", aresult[0])
+                window.set_labeled("infection", iresult[0])
+                window.set_labeled("reconnaissance", rresult[0])
+                window.set_probability("attack", aprob[1])
+                window.set_probability("infection", iprob[1])
+                window.set_probability("reconnaissance", rprob[1])
+                window.set_probability_complete()
+                wnum += 1
+                if wnum % 100 == 0:
+                    logging.info("Progress: {}/{}".format(wnum, len(windows)))
+            logging.info("Progress: {}/{}".format(wnum, len(windows)))
+            self.core.send_training_set_to_sequence_manager(self.training_set)
             self.is_model_generated = True
             logging.info("After generating the model based on the training set")
 
-            self.core.send_training_set_to_sequence_manager(self.training_set)
 
     async def detection(self, window):
         if window:

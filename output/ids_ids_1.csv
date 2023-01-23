@@ -1,0 +1,5 @@
+type, algorithm, accuracy, precision, recall, f1, true positive, true negative, false positive, false negative, learning time, first detection time, # of training samples, # of anomalous training samples, # of test samples, # of benign test samples, # of anomalous test samples
+attack, lstm, 0.98, 0.93, 0.99, 0.96, 139, 594, 11, 2, 9.71, 0.06, 2253, 542, 746, 485, 141
+infection, lstm, 0.92, 0.71, 0.7, 0.71, 69, 620, 28, 29, 9.91, N/A, 2253, 134, 746, 485, 98
+reconnaissance, lstm, 0.99, 0.79, 1.0, 0.88, 22, 718, 6, 0, 7.92, N/A, 2253, 297, 746, 485, 22
+evolution, lstm, 0.98, 0.92, 0.9, 0.91, 81, 747, 7, 9, 9.14, N/A, 2253, 134, 844, 487, 90

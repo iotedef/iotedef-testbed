@@ -2,6 +2,7 @@ from definitions.batch import Batch
 import copy
 import random
 import logging
+import time
 
 class Sequence():
     def __init__(self, sequence, start, end, granularity=0.01, width=100):
@@ -45,9 +46,10 @@ class Sequence():
 
     def store(self, ofname, training):
         fnames = self.sequence[0].get_feature_names()
-        if training:
-            self.sequence = balancing(self.sequence)
+        #if training:
+        #    self.sequence = balancing(self.sequence)
         #self.sequence = sorted(self.sequence, key=lambda x: x.get_start_time())
+        logging.info(">>> Before opening {}".format(ofname))
         with open(ofname, "w") as of:
             of.write("flow_info: ")
             for f in fnames[:-1]:
@@ -59,6 +61,7 @@ class Sequence():
                 for f in fnames[:-1]:
                     of.write("{}, ".format(state.get_feature_value(f)))
                 of.write("{}: {}: {}, {}: {}: {}: {}: {}: {}: {}: {}: {}: {}: {}\n".format(state.get_feature_value(fnames[-1]), state.get_serial_number(), state.get_start_time(), state.get_end_time(), state.get_label("attack"), state.get_label("infection"), state.get_label("reconnaissance"), state.get_labeled("attack"), state.get_labeled("infection"), state.get_labeled("reconnaissance"), state.get_probability("benign"), state.get_probability("attack"), state.get_probability("infection"), state.get_probability("reconnaissance")))
+        logging.info(">>> After storing the sequence at {}".format(ofname))
 
     def print_sequence(self):
         print ("Start time: {}".format(self.start_time))

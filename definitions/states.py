@@ -44,6 +44,16 @@ class State():
         else:
             return self.label
 
+    def get_label_vector(self):
+        if self.label["reconnaissance"] == 1:
+            return [0, 1, 0, 0]
+        elif self.label["infection"] == 1:
+            return [0, 0, 1, 0]
+        elif self.label["attack"] == 1:
+            return [0, 0, 0, 1]
+        else:
+            return [1, 0, 0, 0]
+
     def get_labeled(self, kind=None):
         try:
             if kind:
@@ -133,6 +143,9 @@ class State():
             return self.probability[kind]
         else:
             return self.probability
+
+    def get_probability_vector(self):
+        return [self.probability["benign"], self.probability["reconnaissance"], self.probability["infection"], self.probability["attack"]]
 
     def get_probability_char(self, kind=None):
         if kind:

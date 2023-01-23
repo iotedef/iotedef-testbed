@@ -45,6 +45,7 @@ class SequenceManager:
         end_time = round(states[-1].get_end_time(), self.rv)
         ofname = "{}/{}_{}.csv".format(self.home_directory, self.ofprefix, int(time.time()))
         sequence = Sequence(states, start_time, end_time, self.granularity, self.width)
+        logging.info(">>> Store the sequence for training as {}".format(ofname))
         sequence.store(ofname, training=True)
         algs = ""
         for a in self.anames[:-1]:
@@ -81,6 +82,7 @@ class SequenceManager:
                 end_time = round(self.sequence[-1].get_end_time(), self.rv)
                 ofname = "{}/{}_{}.csv".format(self.home_directory, self.ofprefix, int(time.time()))
                 sequence = Sequence(self.sequence, start_time, end_time, self.granularity, self.width)
+                logging.info(">>> Store the sequence for testing as {}".format(ofname))
                 sequence.store(ofname, training=False)
 
                 algs = ""

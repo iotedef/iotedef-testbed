@@ -24,7 +24,7 @@ IP Address 1: 10.0.60.196
 Port 1: 20001
 Self Evolving: True
 Update Strategy: 1
-Sequence Length: 700
+Sequence Length: 1000
 
 # Encoders (identity)
 Encoder: identity
@@ -35,7 +35,7 @@ Infection Detection: lstm
 Reconnaissance Detection: lstm
 
 # Causal Analyzer (episode_tree/identity/baseline/simple_attention/viterbi/seq2seq_attention/bilstm_attention/attention)
-Analyzer: seq2seq_attention
+Analyzer: attention
 
 # Packet Feature Extractors (True/False)
 

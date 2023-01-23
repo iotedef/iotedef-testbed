@@ -617,6 +617,7 @@ def parse_config(ids, conf):
     port0 = 20001
     port1 = 20001
     strategy = 1
+    slength = 1000
 
     with open(conf, "r") as f:
         for line in f:
@@ -694,6 +695,8 @@ def parse_config(ids, conf):
                     efname = val
                 elif key == "Update Strategy":
                     strategy = val
+                elif key == "Sequence Length":
+                    slength = int(val)
                 elif key == "Encoder":
                     ename = val
                 elif key == "Attack Detection":

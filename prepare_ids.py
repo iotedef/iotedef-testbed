@@ -79,13 +79,14 @@ def make_config(ofname, anames, cnames, enames, pnames, fnames):
         of.write("Number Of Candidates: 10\n")
         of.write("Number Of Results: 10\n")
         of.write("Number Of Final Results: 3\n")
-        of.write("Local: False\n")
+        of.write("Local: True\n")
         of.write("IP Address 0: 10.0.0.69\n")
         of.write("Port 0: 20001\n")
         of.write("IP Address 1: 10.0.60.196\n")
         of.write("Port 1: 20001\n")
         of.write("Self Evolving: False\n")
         of.write("Update Strategy: 1\n")
+        of.write("Sequence Length: 1000\n")
 
         of.write("\n# Encoders ({}".format(enames[0]))
         for idx in range(1, len(enames)):
