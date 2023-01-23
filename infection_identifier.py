@@ -20,7 +20,7 @@ THRESHOLD = 10
 BUF_SIZE = 256
 
 class CausalAnalyzer:
-    def __init__(self, conf, ofname=None, serial=None):
+    def __init__(self, conf, ofname=None, serial=None, trname=None, tename=None):
         self.config = parse_config(conf, serial)
         if ofname and serial:
             self.config["output"] = "ca_{}_{}.csv".format(ofname, serial)
@@ -34,6 +34,8 @@ class CausalAnalyzer:
         self.sock.bind((self.config["ipaddr"], self.config["port"]))
         self.client = None
         self.evolve = False
+        self.training = trname
+        self.testing = tename
 
         loop = asyncio.new_event_loop()
         ca = threading.Thread(target=run, args=(self, loop,))
@@ -144,37 +146,46 @@ class CausalAnalyzer:
 async def main_loop(ca):
     sock = ca.sock
 
-    while True:
-        pair = sock.recvfrom(BUF_SIZE)
-        msg = pair[0].decode()
-        ca.client = pair[1]
-        op, algs, fname = msg.split(":")
-        fname = fname.strip()
+    if ca.training and ca.testing:
+        anames = ca.config["cnames"]
+        logging.debug("analyzers: {}".format(anames))
+        logging.info("ca.training: {}".format(ca.training))
+        await process_operation(ca, "training", ca.training, anames, False)
+        logging.info("ca.testing: {}".format(ca.testing))
+        await process_operation(ca, "test", ca.testing, anames, False)
+    else:
+        while True:
+            pair = sock.recvfrom(BUF_SIZE)
+            msg = pair[0].decode()
+            ca.client = pair[1]
+            op, algs, fname = msg.split(":")
+            fname = fname.strip()
 
-        anames = algs.split(",")
-        rlst = []
-        for aname in anames:
-            if aname not in ca.analyzers:
-                rlst.append(aname)
+            anames = algs.split(",")
+            rlst = []
+            for aname in anames:
+                if aname not in ca.analyzers:
+                    rlst.append(aname)
 
-        for rname in rlst:
-            logging.error("No corresponding algorithm {} is exist".format(rname))
-            anames.remove(rname)
+            for rname in rlst:
+                logging.error("No corresponding algorithm {} is exist".format(rname))
+                anames.remove(rname)
 
-        if op == "evolve":
-            ca.evolve = True
-            op = "test"
+            if op == "evolve":
+                ca.evolve = True
+                op = "test"
 
-        await process_operation(ca, op, fname, anames)
+            await process_operation(ca, op, fname, anames, True)
 
-async def process_operation(ca, op, fname, anames):
+async def process_operation(ca, op, fname, anames, dynamic):
     if op == "training":
         logging.info("Operation: training, Algorithms: {}, File: {}".format(anames, fname))
         sequence = ca.generate_sequence(fname, True)
         #sequence.print_sequence()
         for aname in anames:
             ca.analyzers[aname].learning(sequence, ca.config)
-        os.remove(fname)
+        if dynamic:
+            os.remove(fname)
 
     elif op == "test":
         sequence = ca.generate_sequence(fname, False)
@@ -185,7 +196,8 @@ async def process_operation(ca, op, fname, anames):
             while not ca.analyzers[aname].model_exists():
                 time.sleep(10)
             infections = ca.analyzers[aname].analysis(sequence, ca.config)
-        os.remove(fname)
+        if dynamic:
+            os.remove(fname)
 
         candidates = ca.infection_labeled_states
         serials = []
@@ -203,7 +215,10 @@ async def process_operation(ca, op, fname, anames):
             msg += str(serials[-1])
 
         logging.debug("msg: {}".format(msg))
-        ca.sock.sendto(str.encode(msg), ca.client)
+        if dynamic:
+            ca.sock.sendto(str.encode(msg), ca.client)
+        else:
+            logging.info("msg: {}".format(msg))
 
         logging.info("Quit the Causal Analyzer")
         sys.exit(0)
@@ -357,6 +372,8 @@ def command_line_args():
     parser = argparse.ArgumentParser()
     parser.add_argument("-c", "--config", required=True, help="Configuration file", metavar="<configuration file>", type=str)
     parser.add_argument("-l", "--log", metavar="<log level>", help="Log level (DEBUG/INFO/WARNING/ERROR/CRITICAL)", type=str)
+    parser.add_argument("-i", "--training", metavar="<input training sequence file>", help="Input File Name (training)", type=str)
+    parser.add_argument("-j", "--testing", metavar="<input testing sequence file>", help="Input File Name (testing)", type=str)
     parser.add_argument("-o", "--output", metavar="<output file name prefix>", help="Output File Name Prefix", type=str, default=None)
     parser.add_argument("-s", "--serial", help="Serial number to correlate the result file of the IDS and the causal analyzer", metavar="<serial number>", type=int, default=None)
 
@@ -367,7 +384,7 @@ def main():
     args = command_line_args()
     logging.basicConfig(level=args.log)
 
-    causal_analyzer = CausalAnalyzer(args.config, args.output, args.serial)
+    causal_analyzer = CausalAnalyzer(args.config, args.output, args.serial, trname=args.training, tename=args.testing)
 
 if __name__ == "__main__":
     main()
